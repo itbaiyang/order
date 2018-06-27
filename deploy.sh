@@ -25,7 +25,7 @@ mvn clean install
 
 # 停tomcat
 # killTomcat
-service tomcat8 stop
+service tomcat7 stop
 
 # 删除原有工程
 rm -rf $TOMCAT_APP_PATH/webapps/ROOT
@@ -40,7 +40,7 @@ mv order.war ROOT.war
 
 # 启动Tomcat
 cd $TOMCAT_APP_PATH/
-service tomcat8 start
+service tomcat7 start
 
 
 
